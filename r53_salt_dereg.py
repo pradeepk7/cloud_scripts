@@ -24,7 +24,7 @@ if len(sys.argv) == 2:
    def saltDereg():
      with settings (hide('stdout','running','warnings'), warn_only=True):
          #out = run('sudo salt-key -L | grep %s' % (host))
-         out = run('sudo salt-key -d %s.itp.netflix.com -y' % (host))
+         out = run('sudo salt-key -d %s.someorg.com -y' % (host))
          return out
 
    print ('Deregistering %s from the Salt system...' % (host))
