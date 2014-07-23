@@ -3,7 +3,7 @@ USER1=$PAM_USER
 USER2='root'
 CHECKHOMEDIR=`ls /home | grep -o ^$USER1`
 KEYEXISTS=`ls /home/$USER1/.ssh/ | grep -o id_rsa`
-SALTSERVER='saltstack-syndic-east-1.itd.netflix.com'
+SALTSERVER='saltstack-syndic-east-1.itd.someorg.com'
 SALTPORTS='4505-4506'
 
 checkmaster ()
