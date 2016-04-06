@@ -3,9 +3,8 @@ from fabric.api import *
 # For ip-### regexp matching
 import re
 
-#env.host_string = '10.201.32.207'
-env.hosts = ['10.201.32.207','10.201.32.207']
-env.key_filename = '/apps/aws/keys/awsitops-dev-key.pem'
+env.hosts = ['10.0.0.10','10.0.0.11']
+env.key_filename = 'mykey'
 env.user = 'ubuntu'
 
 def linux_distribution():

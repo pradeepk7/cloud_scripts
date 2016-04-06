@@ -4,7 +4,7 @@
 import subprocess
 import datetime
 
-sync = subprocess.call(('boto-rsync', 's3://itops-ldap/', '/apps/scripts/ldapsync/'))
+sync = subprocess.call(('boto-rsync', 's3://mybucket-ldap/', '/apps/scripts/ldapsync/'))
 
 def datestamp():
     '''

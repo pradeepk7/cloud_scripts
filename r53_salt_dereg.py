@@ -10,8 +10,8 @@ import os
 import sys
 from fabric.api import *
 
-env.host_string = 'saltstack-syndic-west-1.itp.someorg.com'
-env.key_filename = '/path/to/my/awsaccount.pem'
+env.host_string = 'saltstack-syndic.someorg.com'
+env.key_filename = 'mykey.pem'
 env.user = 'ubuntu'
 
 if len(sys.argv) == 2:
